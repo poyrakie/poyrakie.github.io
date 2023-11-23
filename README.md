@@ -1,1 +1,0 @@
-# poyrakie.github.io
