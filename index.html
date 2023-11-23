@@ -1,0 +1,613 @@
+<!-- Detta project är gjort i sammarbete med Robin Gombkötö -->
+<!-- Koden kommer vara väldigt lik hans -->
+<!-- Vi har arbetat i team och det har varit väldigt värdefullt må jag säga -->
+<!DOCTYPE html>
+<html lang="sv-se">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://kit.fontawesome.com/41c8b474e2.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Crito</title>
+</head>
+<body>
+
+    <!-- header section -->
+    <header>
+        <div class="container">
+            <a href="index.html"><img src="images/Logo.svg" alt="crito logotype"></a>
+            <!-- Menu-bars syns enbart vid mobilläge och är ej fullständigt, bara proof of concept -->
+            <button class="menu-bars"><i class="menu-bars fa-solid fa-bars-staggered"></i></button>
+            <!-- menu delas upp i två delar, top-menu och main-menu -->
+            <div class="menu">
+                <div class="top-menu">
+                    <div class="contact-information">
+                        <div class="content-box">
+                            <a href="tel:+46812147050"> <i class="fa-regular fa-phone-volume"></i>+46 (8) 121 470 50</a>
+                        </div>
+                        <div class="content-box">
+                            <a href="mailto:info@crito.com"><i class="fa-regular fa-envelope"></i>info@crito.com</a>
+                        </div>
+                        <div class="content-box last">
+                            <a href="contact.html#contact-map"><i class="fa-sharp fa-regular fa-location-dot"></i>Sveavägen 31, 111 34 STOCKHOLM </a>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="main-menu">
+                    <nav>
+                        <a class="active" href="index.html">Home</a>
+                        <a href="#">Service</a>
+                        <a href="#">News</a>
+                        <a href="contact.html">Contact</a>
+                    </nav>
+                    <a class="btn-yellow btn-login" href="#">Login <i class="fa-regular fa-arrow-up-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- showcase section -->
+        <section class="showcase-section">
+            <img class="squiggly-lines" src="images/showcase-lines.svg" alt="squiggly lines">
+            <div class="container">
+                <div class="content">
+                    <h1>
+                        We Provide The Best Business Solutions
+                    </h1>
+                    <p>
+                        Establish your vision and value proposition and turn them into testable prototypes.
+                    </p>
+                    <a class="btn-yellow" href="#">Get consulting <i class="fa-regular fa-arrow-up-right"></i></a>
+                    <a class="btn-transparent" href="#">Learn More <i class="fa-regular fa-arrow-up-right"></i></a>
+                </div>
+                <img src="/images/image-showcase.svg" alt="image of a thinking man in a suit with a tablet">
+            </div>
+        </section>
+
+        <!-- features section -->
+        <!-- anger id till sectionen för att kunna länka från footer -->
+        <section class="features-section" id="features-section">
+            <div class="container">
+                <!-- a-länkar delas upp i 1 eller 2 divvar beroende på vilken skärmbredd -->
+                <div class="partners">
+                    <a href="#"><img src="/images/logo-paperz.svg" alt="Paperz logo"></a>
+                    <a href="#"><img src="/images/logo-dorfus.svg" alt="Dorfus logo"></a>
+                    <a href="#"><img src="/images/logo-martino.svg" alt="Martino logo"></a>
+                    <a class="show" href="#"><img src="/images/logo-square.svg" alt="Square logo"></a>
+                    <a class="show" href="#"><img src="/images/logo-gobona.svg" alt="Gobona logo"></a>
+                </div>
+                <div class="hidden">
+                    <a href="#"><img src="/images/logo-square.svg" alt="Square logo"></a>
+                    <a href="#"><img src="/images/logo-gobona.svg" alt="Gobona logo"></a>
+                </div>
+                <div class="features">
+                    <div class="part-one">
+                        <p class="orange-p">Features</p>
+                        <h2>
+                            Our Accounting is trusted by thousands of companies
+                        </h2>
+                        <a class="btn-yellow" href="#">Learn More<i class="fa-regular fa-arrow-up-right"></i></a>
+                    </div>
+                    <div class="part-two">
+                        <!-- delar upp boxarna i kolumner för att lättare hantera responsivitet -->
+                        <div>
+                            <div>
+                                <i class="fa-regular fa-handshake"></i>
+                                <h3>Business Advice</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                                <i class="fa-regular fa-chart-mixed-up-circle-dollar"></i>
+                                <h3>Financial Advice</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <div>
+                            </div>
+                        </div>
+                        <div class="icons-right">
+                            <div>
+                                <i class="fa-regular fa-lightbulb-on"></i>
+                                <h3>Startup Business</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-box-circle-check"></i>
+                                <h3>Risk Management</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- about section -->
+        <!-- anger id till sectionen för att kunna länka från footer -->
+        <section class="about-section" id="about-section">
+            <!-- delar upp containern i två children för att bruka flex -->
+            <div class="container">
+                <div class="samantha">
+                    <img src="/images/samantha.jpg" alt="Smiling woman carrying a laptop, walking down office hallway">
+                    <div class="samantha-info">
+                        <div>
+                            <h4>
+                                Samantha Brown,
+                            </h4>
+                            <p class="orange-p">
+                                Founder
+                            </p>
+                            <p>
+                                <i>"Lorem ipsum dolor sit amet consectetur adipisicing elit."</i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-company">
+                    <p class="orange-p">
+                        About Company
+                    </p>
+                    <h2>
+                        We Are Business Consulting & Credit Repair Experts
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam officiis quas assumenda esse obcaecati? Ex esse error voluptates iure vel totam eos.
+                    </p>
+                    <p class="lorem"> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis esse quasi incidunt adipisci accusantium libero provident voluptate amet.
+                    </p>
+                    <div>
+                        <a class="btn-black" href="#">Learn More <i class="fa-regular fa-arrow-up-right"></i></a>
+                        <a class="video-button" href="#"><i class="fa-sharp fa-solid fa-play transition"></i> Intro Video</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- services -->
+        <section class="services-section">
+            <img class="squiggly-lines" src="images/services-lines.svg" alt="squiggly lines">
+            <div class="container">
+                <div>
+                    <p class="orange-p">
+                        Our Services
+                    </p>
+                    <h2>
+                        We Provide The Best </br> Service For Consulting
+                    </h2>
+                </div>
+                <div class="services-box">
+                    <a class= "transition" href="#"><div>
+                        <!-- gör en tom div för att få dit sträcket ovanför texten -->
+                        <div class="border-bit"></div>
+                        <h3>
+                            Business Advice
+                        </h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.
+                        </p>
+                        <div class="end-content"><i class="fa-regular fa-arrow-right transition"></i></div>
+                    </div></a>
+                    <a class= "transition" href="#"><div>
+                        <!-- gör en tom div för att få dit sträcket ovanför texten -->
+                        <div class="border-bit"></div>
+                        <h3>
+                            Startup Business
+                        </h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.
+                        </p>
+                        <div class="end-content"><i class="fa-regular fa-arrow-right transition"></i></div>
+                    </div></a>                    
+                    <a class= "transition" href="#"><div>
+                        <!-- gör en tom div för att få dit sträcket ovanför texten -->
+                        <div class="border-bit"></div>
+                        <h3>
+                            Financial Advice
+                        </h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.
+                        </p>
+                        <div class="end-content"><i class="fa-regular fa-arrow-right transition"></i></div>
+                    </div></a>                    
+                    <a class= "transition" href="#"><div>
+                        <!-- gör en tom div för att få dit sträcket ovanför texten -->
+                        <div class="border-bit"></div>
+                        <h3>
+                            Risk Management
+                        </h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.
+                        </p>
+                        <div class="end-content"><i class="fa-regular fa-arrow-right transition"></i></div>
+                    </div></a>
+                </div>
+                <div class="center-content"><a class="btn-transparent" href="#">Browse Services<i class="fa-regular fa-arrow-up-right"></i></a></div>
+            </div>
+        </section>
+
+        <!-- why choose us section -->
+        <section class="choose-us-section">
+
+            <!-- Parent med childrens, separat titelbit och 4 headline boxar -->
+            <div class="container">
+                <div class="why-choose-us">
+                    <p class="orange-p">
+                        Why Choose Us
+                    </p>
+                    <h2>
+                        Why We Are The Best Business Consulting Agency
+                    </h2>
+                    <div class="headlines">
+                        <!-- icon ligger utanför textdiven för att den ska hamna bredvid -->
+                        <i class="fa-light fa-thumbs-up"></i>
+                        <div>
+                            <h3>
+                                Process Excellence
+                            </h3>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="headlines">
+                        <!-- icon ligger utanför textdiven för att den ska hamna bredvid -->
+                        <i class="fa-light fa-gem"></i>
+                        <div>
+                            <h3>
+                                Strategic Planning
+                            </h3>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="headlines">
+                        <!-- icon ligger utanför textdiven för att den ska hamna bredvid -->
+                        <i class="fa-light fa-pen-nib"></i>
+                        <div>
+                            <h3>
+                                Experience Design
+                            </h3>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="headlines">
+                        <!-- icon ligger utanför textdiven för att den ska hamna bredvid -->
+                        <i class="fa-light fa-head-side-gear"></i>
+                        <div>
+                            <h3>
+                                Artificial Inteligence
+                            </h3>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="choose-us-img">
+                    <img src="/images/choose-us.png" alt="Two seated women having a discussion in an office">
+                </div>
+            </div>
+        </section>
+
+        <!-- project &case studies section -->
+        <section class="projects-section">
+            <!-- container delas upp i 2 children för enklare hantering av position -->
+            <div class="container">
+                <div class="title-part">
+                    <p class="orange-p">Project & Case Studies</p>
+                    <h2>Let's Looks Our Global Projects</h2>
+                </div>
+
+                <div class="project-part">
+                    <!-- gör varje artikel till en a-länk -->
+                    <a href="#">
+                        <img class="transition" src="/images/article-1.jpg" alt="Mans hand holding a business paper">
+                        <h3>Grow your Business</h3>
+                        <p>Read More<i class="fa-regular fa-arrow-up-right"></i></p>
+                    </a>
+                    <a href="#">
+                        <img class="transition" src="/images/article-2.jpg" alt="Pink electronic products">
+                        <h3>Why your clients needs a responsive website</h3>
+                        <p>Read More<i class="fa-regular fa-arrow-up-right"></i></p>
+                    </a>
+                    <a href="#">
+                        <img class="transition" src="/images/article-3.jpg" alt="Notebook and coffee on desk">
+                        <h3>Educate your employees to get better results</h3>
+                        <p>Read More<i class="fa-regular fa-arrow-up-right"></i></p>
+                    </a>
+                    <a href="#">
+                        <img class="transition" src="/images/article-4.jpg" alt="Open laptop with statistics">
+                        <h3>Business Insights is an important piece of your business</h3>
+                        <p>Read More<i class="fa-regular fa-arrow-up-right"></i></p>
+                    </a>
+                </div>
+                <div class="center-content">
+                    <a class="btn-black" href="#">All Recent Projects <i class="fa-regular fa-arrow-up-right"></i></a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- meet our team section -->
+        <section class="meet-section">
+            <!-- delar upp container i två children -->
+            <div class="container">
+                <!-- titel-del -->
+                <div class="part-one">
+                    <div>
+                        <p class="orange-p">Meet Our Team</p>
+                        <h2>Experienced Team Members</h2>
+                    </div>
+                    <a class="btn-transparent" href="#">Browse Teams<i class="fa-regular fa-arrow-up-right"></i></a>
+                </div>
+                <!-- coworker-del -->
+                <div class="part-two">
+                    <div>
+                        <img src="images/kristine.png" alt="Woman smiling infront of a window in an office">
+                        <h3>Kristine Palmer</h3>
+                        <p>Chef Operation Officer</p>
+                    </div>
+                    <div>
+                        <img src="images/mark.png" alt="Man in suit holding his hands infront of white bakground">
+                        <h3>Mark Aubri</h3>
+                        <p>Senior Consultant</p>
+                    </div>
+                    <div>
+                        <img src="images/kimberly.png" alt="Woman sitting in a window smiling, and holding a book">
+                        <h3>Kimberly Hansen</h3>
+                        <p>Senior Consultant</p>
+                    </div>
+                    <div>
+                        <img src="images/justin.png" alt="Headshot of a man that is smiling">
+                        <h3>Justin Willoman</h3>
+                        <p>Senior Tech Consultant</p>
+                    </div>
+                </div>
+                <div class="round-buttons">
+                    <a href="#"><i class="fa-sharp fa-solid fa-circle"></i></a>
+                    <a class="active" href="#"><i class="fa-sharp fa-solid fa-circle"></i></a>
+                    <a href="#"><i class="fa-sharp fa-solid fa-circle"></i></a>
+                    <a href="#"><i class="fa-sharp fa-solid fa-circle"></i></a>
+                    <a href="#"><i class="fa-sharp fa-solid fa-circle"></i></a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- testimonial section -->
+        <section class="testimonial-section">
+            <!-- container delas upp i titel, content child och knapp -->
+            <div class="container">
+                <p class="orange-p">Testimonial</p>
+                <h2>What Our Clients Says</h2>
+                <!-- parent delas upp i individuella children för varje reviewer -->
+                <div class="reviews">
+                    <div class="content-box">
+                        <div class="stars">
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">
+                            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"
+                        </p>
+                        <div class="reviewer">
+                            <img src="images/cassandra.png" alt="small circular image of a womans face">
+                            <div>
+                                <h3>Cassandra Warren</h3>
+                                <p class="orange-p">Business Manager, Dorfus</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <div class="stars">
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">
+                            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"
+                        </p>
+                        <div class="reviewer">
+                            <img src="images/amanda.png" alt="small circular image of a womans face">
+                            <div>
+                                <h3>Amanda Tulling</h3>
+                                <p class="orange-p">Senior Developer, Square</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <div class="stars">
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">
+                            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"
+                        </p>
+                        <div class="reviewer">
+                            <img src="images/jack.png" alt="small circular image of a mans face">
+                            <div>
+                                <h3>Jack McDogglas</h3>
+                                <p class="orange-p">Key Account Manager, Gobona</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="center-content">
+                    <a class="btn-black" href="#">All Reviews <i class="fa-regular fa-arrow-up-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- article & news section -->
+        <section class="article-section">
+            <!-- parent delkas upp i tre children -->
+            <div class="container">
+                <!-- titel-del med knapp -->
+                <div class="part-one">
+                    <div>
+                        <p class="orange-p">Articles & News</p>
+                        <h2>Get Every Single Articles & News</h2>
+                    </div>
+                    <a class="btn-transparent" href="#">Browse Teams<i class="fa-regular fa-arrow-up-right"></i></a>
+                </div>
+                <!-- artikel-del -->
+                <div class="part-two">
+                    <a href="#">
+                        <img class="transition" src="/images/25mars.png" alt="Woman sitting in a classroom smiling">
+                        <p class="business-color">Business</p>
+                        <h3>How To Use Digitalization In The Classroom</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+                        <!-- div för att visa datumet på bilden -->
+                        <div class="absolute-date">
+                            <h3>25</h3>
+                            <p>Mar</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img class="transition" src="/images/17mars.png" alt="Picture taken at an angle at a screen with business information">
+                        <p class="business-color">Business</p>
+                        <h3>How To Implement Chat Got In Your Projects</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+                        <!-- div för att visa datumet på bilden -->
+                        <div class="absolute-date">
+                            <h3>17</h3>
+                            <p>Mar</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img class="transition" src="/images/13mars.png" alt="A phone laying on two stacked books">
+                        <p class="business-color">Business</p>
+                        <h3>The Guide To Support Modern CSS Design</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+                        <!-- div för att visa datumet på bilden -->
+                        <div class="absolute-date">
+                            <h3>13</h3>
+                            <p>Mar</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- knapp-del för att visa var man är på sidoskrollningen -->
+                <div class="round-buttons">
+                    <a class="active" href="#"><i class="fa-sharp fa-solid fa-circle"></i></a>
+                    <a href="#"><i class="fa-sharp fa-solid fa-circle"></i></a>
+                    <a href="#"><i class="fa-sharp fa-solid fa-circle"></i></a>
+                    <a href="#"><i class="fa-sharp fa-solid fa-circle"></i></a>
+                    <a href="#"><i class="fa-sharp fa-solid fa-circle"></i></a>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- Mail-signup section -->
+        <section class="mail-signup-section">
+            <img class="squiggly-lines" src="images/mail-signup-lines.svg" alt="squiggly-lines">
+            <div class="container">
+                <h2>
+                    Get News Updates By Signup
+                </h2>
+
+                <div class="subscribe">
+                    <form method="post">
+                        <label for="signup"></label>
+                        <input type="text" id="signup" name="signup" placeholder="username@domain.com">
+                    </form>
+                    <button class="btn-yellow" href="#">Subscribe <i class="fa-regular fa-arrow-up-right"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer section -->
+    <!-- footer delas upp i 3 children, top-footer, border, bottom-footer -->
+    <footer>
+        <section class="top-footer">
+            <img class="squiggly-lines" src="images/footer-lines.svg" alt="squiggly lines">
+            <!-- container delas upp i flera children -->
+            <div class="container footer-menu">
+                <!-- div för logo med länk till index.html -->
+                <div>
+                    <a href="index.html"><img src="images/Logo-white-text.svg" alt="crito logotype"></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat obcaecati voluptas voluptates! Voluptates laborum nam ratione minus necessitatibus, iure praesentium.</p>
+                </div>
+                <!-- proof of concept menu-bars -->
+                <button class="menu-bars"><i class="menu-bars fa-solid fa-bars-staggered"></i></button>
+                <div class="link-list">
+                    <h3>Company</h3>
+                    <a href="#about-section">About</a>
+                    <a href="#features-section">Features</a>
+                    <!-- Du får väl se vart länken tar dig ;) -->
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Works</a>
+                    <!-- Du får väl se vart länken tar dig ;) -->
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Career</a>
+                </div>
+                <div class="link-list">
+                    <h3>Help</h3>
+                    <!-- Du får väl se vart länken tar dig ;) -->
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Customer Support</a>
+                    <!-- Du får väl se vart länken tar dig ;) -->
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Delivery Details</a>
+                    <!-- Du får väl se vart länken tar dig ;) -->
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Terms & Conditions</a>
+                    <!-- Du får väl se vart länken tar dig ;) -->
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Privacy Policy</a>
+                </div>
+                <div class="link-list">
+                    <h3>Resources</h3>
+                    <!-- Du får väl se vart länken tar dig ;) -->
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Free eBooks</a>
+                    <!-- Du får väl se vart länken tar dig ;) -->
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Development Tutorial</a>
+                    <!-- Du får väl se vart länken tar dig ;) -->
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">How to - Blog</a>
+                    <!-- Du får väl se vart länken tar dig ;) -->
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Youtube Playlist</a>
+                </div>
+                <div class="link-list">
+                    <h3>Link</h3>
+                    <!-- Du får väl se vart länken tar dig ;) -->
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Free eBooks</a>
+                    <!-- Du får väl se vart länken tar dig ;) -->
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Development Tutorial</a>
+                    <!-- Du får väl se vart länken tar dig ;) -->
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">How to - Blog</a>
+                    <!-- Du får väl se vart länken tar dig ;) -->
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Youtube Playlist</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="footer-border"></div>
+        <section class="container bot-footer">
+            <p>
+                &copy; 2023 Crito - Consulting Company Inc. All Rights Reserved.
+            </p>
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </section>
+        
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
